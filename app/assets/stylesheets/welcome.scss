@@ -1,0 +1,71 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$header-font-color: #BBA900;
+$footer-font-color: #776F70;
+$footer-color: #005057;
+
+
+.nav.navbar-nav.navbar-right li a {
+  color: $header-font-color;
+}
+
+.navbar-brand {
+  color: $header-font-color;
+}
+
+.navbar-custom{
+  font-family: 'Oxygen', sans-serif;
+}
+
+#pretzel-video {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+video {
+  display: inline-block;
+}
+
+#hero {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 60%;
+  overflow: hidden;
+  min-width: 1045px;
+}
+
+.footer {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: $footer-color;
+}
+
+.footer-content{
+  color:$footer-font-color;
+}
+
+.ghost-btn {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #000000;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-btn:hover,
+.ghost-btn:active {
+  background-color: #fff;
+  color: #000;
+}
