@@ -4,6 +4,7 @@
 
 
 $va-font_color: #ffffff;
+$va-background-color:#E36937;
 
 #pretzel-video {
   bottom: 0;
@@ -28,7 +29,8 @@ video {
 
 
 .js-show-how-it-works{
-  background: rgba(255,255,255,0.5);
+  background-color: #ffffff;
+  opacity: 0.5;
   border-style: none;
 }
 
@@ -39,5 +41,5 @@ h2{
 .va-welcome{
   color: $va-font_color;
   text-align: center;
-  margin-top: 10%;
+  align-items: center;
 }

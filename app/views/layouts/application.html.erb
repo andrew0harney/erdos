@@ -11,6 +11,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="container-fluid">
     <div class="row">
       <nav class="navbar navbar-custom navbar-fixed-top" id="#navbar">
         <nav class="navbar-inner">
@@ -29,23 +30,28 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="">Publications</a></li>
                 <li><a href="">Open Science</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="">Sign In</a></li>
               </ul>
             </div>
           </div>
         </nav>
       </nav>
     </div>
+    </div>
 
+    <div class="container-fluid">
     <%= yield %>
+    </div>
 
 
+    <div class="container-fluid">
     <div class="row">
       <footer class="footer">
         <div class="container">
           <p class="footer-content">© ERDOS <%= Time.now.year %></p>
         </div>
       </footer>
+    </div>
     </div>
 
 

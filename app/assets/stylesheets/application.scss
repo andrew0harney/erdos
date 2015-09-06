@@ -18,9 +18,12 @@ $header-font-color: #ffffff;
 $footer-font-color: #776F70;
 $footer-color: #005057;
 
-
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Electrolize);
+
+body{
+  padding-top: 65px;
+}
 
 .nav.navbar-nav.navbar-right li a {
     color: $header-font-color;
@@ -38,12 +41,11 @@ $footer-color: #005057;
 
 .footer {
   margin-top: 50px;
-  position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: $footer-color;
+  position: fixed;
 }
 
 .footer-content{
