@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'paper' => 'paper#paper'
   get '/main' => 'main#main'
   get 'welcome/index'
 

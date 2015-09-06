@@ -1,25 +1,24 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="main-section row">
     <div class="overview-container col-md-10 col-md-offset-1">
       <span class="list_heading">New in your field</span>
       <hr>
       <div class="row">
         <% @new_in_field.each do |new_in_field_doc| %>
             <div class="col-xs-6 col-md-2">
-              <a href="#" class="thumbnail">
+              <a href="<%=  paper_path '', :paper=>new_in_field_doc %>" class="thumbnail">
                 <span class="fa fa-file-text-o"/>
                 <div class="caption">
                   <h4><%= new_in_field_doc %></h4>
                   <span class="fa-ellipsis-h"/>
                 </div>
-
               </a>
             </div>
         <% end %>
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="main-section row">
     <div class="overview-container col-md-10 col-md-offset-1">
       <span class="list_heading">Trending in your field</span>
       <hr>
@@ -38,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="main-section row">
     <div class="overview-container col-md-7 col-md-offset-1">
       <span class="list_heading">New Reviews</span>
       <hr>
@@ -60,12 +59,10 @@
       <span class="list_heading">Waiting for your review</span>
       <hr>
       <div>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-          <li>Item 5</li>
+        <ul class="list-group">
+          <% @waiting_for_review.each do |waiting_paper| %>
+          <li class="list-group-item"><%= waiting_paper %>
+          <% end %>
         </ul>
       </div>
     </div>

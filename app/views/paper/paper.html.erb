@@ -1,0 +1,70 @@
+<div class="overview-container">
+  <div class="row">
+    <div class="col-md-3 left-side-info">
+      <div class="col-md-12">
+        <a href="#" class="paper thumbnail">
+          <span class="fa fa-file-text-o"/>
+
+          <div class="caption">
+            <span class="fa-ellipsis-h"/>
+          </div>
+
+        </a>
+      </div>
+    </div>
+
+    <div class="paper-content col-md-6">
+      <div class="paper-info">
+        <h4><span class="paper-name"><%= @paper %></span></h4>
+        <span class="author"><%= @author %></span>
+        <span class="year"><%= @year %></span>
+        <hr>
+
+        <div class="abstract">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere massa ac efficitur posuere. Curabitur
+          pulvinar nunc libero, a pellentesque eros blandit nec. Nulla suscipit fringilla metus et efficitur. Cras eget
+          urna
+          id diam molestie fermentum. Duis enim neque, placerat ultricies dignissim eget, placerat ac justo. Etiam quis
+          tellus urna. Quisque vehicula eu urna id ornare. Nam in lorem vel magna rutrum tincidunt. Aenean semper quam
+          nunc,
+          pulvinar fermentum ipsum rhoncus sit amet. Pellentesque est ex, commodo at nisi nec, condimentum laoreet
+          felis.
+          Nulla pretium fringilla pharetra.
+        </div>
+      </div>
+
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <hr>
+        <div class="container-fluid">
+        <% @reviews.each do |review| %>
+            <div class="review">
+              <div class="row">
+                <span class="review-author"><%= review[:author] %></span> <span class="review-rating"><%=  "Importance: #{review[:importance]} Originality: #{review[:originality]} Rating:#{review[:rating]}" %></span>
+              </div>
+              <div class="review-review row">
+                <%= review[:review] %>
+              </div>
+              <hr>
+            </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="paper-interact col-md-3">
+      <ul class="row list-group">
+        <li class="list-group-item"><a href="">Add to reading list</a></li>
+        <li class="list-group-item"><a href="">Review</a></li>
+        <li class="list-group-item"><a href="">Share</a></li>
+      </ul>
+    </div>
+
+    <div class="row average_ratings">
+      <h4>Average Ratings</h4>
+      <img style="width:300px;" src="http://chart.apis.google.com/chart?cht=s&chtt=Scatter%20Chart&chl=1|2|3|4|5|6|7|8|9|10&chco=058A52&chs=652x250&chd=t:0,10,20,30,40,50,60,70,80,90,100|50,52,56,63,70,80,92,85,75,60,43&chf=bg,s,ffffff"/>
+    </div>
+
+    </div>
+  </div>
+</div>
