@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$header-font-color: #BBA900;
+$header-font-color: #ffffff;
 $footer-font-color: #776F70;
 $footer-color: #005057;
 
@@ -12,7 +12,9 @@ $footer-color: #005057;
 }
 
 .navbar-brand {
-  color: $header-font-color;
+  font-size: x-large!important;
+  color: #E36937;
+  font-weight: 700;
 }
 
 .navbar-custom{
@@ -50,22 +52,20 @@ video {
   background-color: $footer-color;
 }
 
+.js-show-how-it-works{
+  background: rgba(255,255,255,0.5);
+  border-style: none;
+}
+
+h2{
+  font-family: 'Oxygen', sans-serif;
+}
+
 .footer-content{
   color:$footer-font-color;
 }
-
-.ghost-btn {
-  display: inline-block;
-  width: 200px;
-  padding: 8px;
-  color: #000000;
-  border: 1px solid #fff;
+.va-welcome{
+  color: $header-font-color;
   text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-.ghost-btn:hover,
-.ghost-btn:active {
-  background-color: #fff;
-  color: #000;
+  margin-top: 10%;
 }
