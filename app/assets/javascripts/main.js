@@ -1,0 +1,14 @@
+$(document).on('ready page:load', function () {
+
+    $("[rel='tooltip']").tooltip();
+
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250);
+        },
+        function(){
+            $(this).find('.caption').slideUp(250);
+        }
+    );
+
+});

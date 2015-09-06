@@ -1,70 +1,73 @@
 <div class="container-fluid">
-<div class="row">
-  <div class="overview-container col-md-9 col-md-offset-1">
-    <span class="list_heading">New in your field</span>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue diam sed est posuere, id congue nisi
-      pellentesque. In quis justo tempus, mollis metus a, aliquet metus. Maecenas vulputate vehicula nibh, quis tempus
-      sapien dictum eu. Mauris nec viverra nulla. Vivamus ex ligula, blandit ut vestibulum id, iaculis eget eros.
-      Pellentesque faucibus lacus vitae pellentesque tincidunt. Aliquam et arcu efficitur, bibendum leo nec, scelerisque
-      nisl. Duis mi arcu, viverra at nibh ut, egestas molestie sem. Aenean non hendrerit leo. Aliquam id aliquam lacus.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis metus metus, a tempus massa scelerisque
-      ut.
+  <div class="row">
+    <div class="overview-container col-md-10 col-md-offset-1">
+      <span class="list_heading">New in your field</span>
+      <hr>
+      <div class="row">
+        <% @new_in_field.each do |new_in_field_doc| %>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <span class="fa fa-file-text-o"/>
+                <div class="caption">
+                  <h4><%= new_in_field_doc %></h4>
+                  <span class="fa-ellipsis-h"/>
+                </div>
+
+              </a>
+            </div>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="overview-container col-md-9 col-md-offset-1">
-    <span class="list_heading">Trending in your field</span>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue diam sed est posuere, id congue nisi
-      pellentesque. In quis justo tempus, mollis metus a, aliquet metus. Maecenas vulputate vehicula nibh, quis tempus
-      sapien dictum eu. Mauris nec viverra nulla. Vivamus ex ligula, blandit ut vestibulum id, iaculis eget eros.
-      Pellentesque faucibus lacus vitae pellentesque tincidunt. Aliquam et arcu efficitur, bibendum leo nec, scelerisque
-      nisl. Duis mi arcu, viverra at nibh ut, egestas molestie sem. Aenean non hendrerit leo. Aliquam id aliquam lacus.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis metus metus, a tempus massa scelerisque
-      ut.
+  <div class="row">
+    <div class="overview-container col-md-10 col-md-offset-1">
+      <span class="list_heading">Trending in your field</span>
+      <hr>
+      <div class="row">
+        <% @trending_in_field.each do |trending_in_field_doc| %>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <span class="fa fa-file-text-o"/>
+                <div class="caption">
+                  <h4><%= trending_in_field_doc %></h4>
+                  <span class="fa-ellipsis-h"/>
+                </div>
+              </a>
+            </div>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="overview-container col-md-6 col-md-offset-1">
-    <span class="list_heading">New Reviews</span>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue diam sed est posuere, id congue nisi
-      pellentesque. In quis justo tempus, mollis metus a, aliquet metus. Maecenas vulputate vehicula nibh, quis tempus
-      sapien dictum eu. Mauris nec viverra nulla. Vivamus ex ligula, blandit ut vestibulum id, iaculis eget eros.
-      Pellentesque faucibus lacus vitae pellentesque tincidunt. Aliquam et arcu efficitur, bibendum leo nec, scelerisque
-      nisl. Duis mi arcu, viverra at nibh ut, egestas molestie sem. Aenean non hendrerit leo. Aliquam id aliquam lacus.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis metus metus, a tempus massa scelerisque
-      ut.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue diam sed est posuere, id congue nisi
-      pellentesque. In quis justo tempus, mollis metus a, aliquet metus. Maecenas vulputate vehicula nibh, quis tempus
-      sapien dictum eu. Mauris nec viverra nulla. Vivamus ex ligula, blandit ut vestibulum id, iaculis eget eros.
-      Pellentesque faucibus lacus vitae pellentesque tincidunt. Aliquam et arcu efficitur, bibendum leo nec, scelerisque
-      nisl. Duis mi arcu, viverra at nibh ut, egestas molestie sem. Aenean non hendrerit leo. Aliquam id aliquam lacus.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis metus metus, a tempus massa scelerisque
-      ut.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue diam sed est posuere, id congue nisi
-      pellentesque. In quis justo tempus, mollis metus a, aliquet metus. Maecenas vulputate vehicula nibh, quis tempus
-      sapien dictum eu. Mauris nec viverra nulla. Vivamus ex ligula, blandit ut vestibulum id, iaculis eget eros.
-      Pellentesque faucibus lacus vitae pellentesque tincidunt. Aliquam et arcu efficitur, bibendum leo nec, scelerisque
-      nisl. Duis mi arcu, viverra at nibh ut, egestas molestie sem. Aenean non hendrerit leo. Aliquam id aliquam lacus.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis metus metus, a tempus massa scelerisque
-      ut.
+  <div class="row">
+    <div class="overview-container col-md-7 col-md-offset-1">
+      <span class="list_heading">New Reviews</span>
+      <hr>
+      <div class="row">
+        <% @new_reviews.each do |new_review| %>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <span class="fa fa-file-text-o"/>
+                <div class="caption">
+                  <h4><%= new_review %></h4>
+                  <span class="fa-ellipsis-h"/>
+                </div>
+              </a>
+            </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="overview-container col-md-2">
+      <span class="list_heading">Waiting for your review</span>
+      <hr>
+      <div>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="overview-container col-md-2">
-    <span class="list_heading">Waiting for your review</span>
-    <div>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
-    </ul>
-    </div>
-  </div>
-</div>
 </div>
