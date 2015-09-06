@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Efscientificproblems</title>
+  <title>Erdos</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="row">
+      <nav class="navbar navbar-custom navbar-fixed-top" id="#navbar">
+        <nav class="navbar-inner">
+          <div class="container-fluid">
 
-<%= yield %>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="/">ERDOS</a></div>
+            <div class="collapse navbar-collapse" id="example-nav-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Publications</a></li>
+                <li><a href="">Open Science</a></li>
+                <li><a href="">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </div>
+
+    <%= yield %>
+
+
+    <div class="row">
+      <footer class="footer">
+        <div class="container">
+          <p class="footer-content">© ERDOS <%= Time.now.year %></p>
+        </div>
+      </footer>
+    </div>
+
 
 </body>
 </html>
