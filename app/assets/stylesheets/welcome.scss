@@ -6,6 +6,10 @@
 $va-font_color: #ffffff;
 $va-background-color:#E36937;
 
+.nav>li>a:hover {
+  background-color: transparent!important;
+}
+
 #pretzel-video {
   bottom: 0;
   position: absolute;
