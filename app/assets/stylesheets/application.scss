@@ -17,6 +17,7 @@
 $header-font-color: #ffffff;
 $footer-font-color: #ffffff;
 $footer-color: #005057;
+$navbar-dropdown-color: #005057;
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -54,4 +55,9 @@ body{
 
 .footer-content{
   color:$footer-font-color;
+}
+
+#account-nav-collapse > ul > li.dropdown > ul > li > a {
+  color: $navbar-dropdown-color;
+  font-family: 'Oxygen', sans-serif;
 }

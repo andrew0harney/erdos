@@ -1,3 +1,6 @@
+<head>
+</head>
+
 <div class="row">
   <nav class="navbar navbar-custom
     <% if user_signed_in? %>navbar-inverse
@@ -6,25 +9,37 @@
       <div class="container-fluid">
 
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#account-nav-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">ERDOS</a></div>
-        <div class="collapse navbar-collapse" id="example-nav-collapse">
+        <div class="collapse navbar-collapse" id="account-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-                <li><a href=""><%= current_user.email %></a></li>
-                <li><a href="">Account</a></li>
-                <li> <%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="450" data-close-others="false">
+                    <%= current_user.email %> <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu nav-account-dropdown">
+                    <li><a tabindex="-1" href="#">My Publications</a></li>
+                    <li><a tabindex="-1" href="#">My Reviews</a></li>
+                    <li><a tabindex="-1" href="#">Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a tabindex="-1" href="#">Reading List</a></li>
+                    <li class="divider"></li>
+                    <li><a tabindex="-1" href="#">Change Password</a></li>
+                    <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+                  </ul>
+                </li>
             <% else %>
                 <li><a href="">Publications</a></li>
                 <li><a href="">Open Science</a></li>
             <% end %>
             <li>
-              <div class="nav navbar-nav navbar-right">
+              <div class="nav navbar-nav navbar-right col-l-3">
                 <form class="navbar-form" role="search">
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="q">
