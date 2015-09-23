@@ -3,7 +3,7 @@
 
 <div class="row">
   <nav class="navbar navbar-custom
-    <% if user_signed_in? %>navbar-inverse
+    <% unless not @transparent_navbar.nil? and @transparent_navbar %>navbar-inverse
     <% end %> navbar-fixed-top" id="#navbar">
     <nav class="navbar-inner">
       <div class="container-fluid">
