@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require octicons/octicons.css
  *= require_self
  */
 
@@ -34,10 +35,18 @@ body{
     color: $header-font-color;
 }
 
+.nav.navbar-nav.navbar-right li a:hover {
+  color:  #005057;
+}
+
 .navbar-brand {
     font-size: x-large!important;
     color: #E36937;
     font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color:  #005057;
 }
 
 .navbar-custom{

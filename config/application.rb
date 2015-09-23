@@ -25,5 +25,10 @@ module Efscientificproblems
 
     #Use bower files installed to pipeline
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
+    config.assets.precompile << Proc.new { |path|
+      if path =~ /\.(eot|svg|ttf|woff)\z/
+        true
+      end
+    }
   end
 end

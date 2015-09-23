@@ -2,7 +2,6 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 $va-font_color: #ffffff;
 $va-background-color:#E36937;
 
@@ -19,6 +18,7 @@ $va-background-color:#E36937;
 video {
   display: inline-block;
 }
+
 
 #hero {
   z-index: -1;
@@ -47,4 +47,18 @@ video {
   color: $va-font_color;
   text-align: center;
   margin-top: 5%;
+}
+
+.overview-panel{
+  padding-top: 15%;
+}
+
+.overview-icon{
+  font-size: 80px!important;
+  color: #776F70;
+}
+
+.overview-panel{
+  color: #005057;
+  font-family: 'Oxygen', sans-serif!important;
 }
