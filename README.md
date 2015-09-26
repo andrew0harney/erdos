@@ -1,1 +1,1 @@
-[See on Heroku]<erdosresearch.herokuapp.com>
+http://erdosresearch.herokuapp.com
