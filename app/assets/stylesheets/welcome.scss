@@ -11,7 +11,6 @@ $va-background-color:#E36937;
 
 #pretzel-video {
   bottom: 0;
-  position: absolute;
   width: 100%;
 }
 
@@ -22,11 +21,10 @@ video {
 
 #hero {
   z-index: -1;
-  position: fixed;
   right: 0;
   left: 0;
-  top: 0;
-  height: 50%;
+  margin-top: -35%;
+  height: 10%;
   overflow: hidden;
   min-width: 1045px;
 }
@@ -40,29 +38,21 @@ video {
 
 .va-welcome{
   font-family: 'Oxygen', sans-serif!important;
-}
-
-
-.va-welcome{
   color: $va-font_color;
   text-align: center;
-  margin-top: 5%;
+  margin-top: -20%;
+  z-index: 100;
+  position: relative;
 }
 
+
 .overview-panel{
-  padding-top: 10%;
+  padding-top: 5%;
+  color: #005057;
+  font-family: 'Oxygen', sans-serif!important;
 }
 
 .overview-icon{
   font-size: 80px!important;
   color: #776F70;
-}
-
-.overview-panel{
-  color: #005057;
-  font-family: 'Oxygen', sans-serif!important;
-}
-
-p {
-  font-family: 'Oxygen', sans-serif!important;
 }

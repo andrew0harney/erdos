@@ -7,41 +7,50 @@
 </head>
 <body>
 
-    <div class="row" id="hero">
-      <video loop="loop" preload="auto" autobuffer autoplay id="pretzel-video" class="video-playing">
-        <source src="<%= asset_url 'lamp.mp4' %>" type="video/mp4">
-      </video>
+<div class="row" id="hero">
+  <video loop="loop" preload="auto" autobuffer autoplay id="pretzel-video" class="video-playing">
+    <source src="<%= asset_url 'lamp.mp4' %>" type="video/mp4">
+  </video>
+</div>
+
+<div class="row">
+  <div class="va-welcome">
+    <h2>Welcome</h2>
+    <h4>To Open Science</h4>
+    <a href="/users/sign_up" class="btn hide-xs btn-contrast btn-large btn-semi-transparent js-show-how-it-works">
+      Subscribe
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="row overview-panel text-center col-xs-8 col-xs-offset-2">
+    <p>At present we have no product. We are reaching out to people to find out what issues they see and what they feel
+      the science community should look like.
+      If you'd be interested in following our journey and shaping our efforts then please subscribe.</p>
+    <br>
+    <hr>
+    <div class="community-overview col-xs-4 col-xs-12">
+      <span class="overview-icon mega-octicon octicon-organization"></span>
+
+      <h4>Developing Community</h4>
+      <p>Keep a diary of papers you read. Add reviews, ratings and share with your peers.</p>
     </div>
+    <div class="publication-overview col-xs-4 col-xs-12">
+      <span class="overview-icon mega-octicon octicon-book"></span>
 
-      <div class="row">
-        <div class="va-welcome">
-          <h2>Welcome</h2>
-          <h4>To Open Science</h4>
-          <a href="/users/sign_up" class="btn hide-sm btn-contrast btn-large btn-semi-transparent js-show-how-it-works">
-            Subscribe
-          </a>
-        </div>
+      <h4>Research Management</h4>
+      <p>Manage the evolution of your ideas, scripts, and data with a simple visualisation.</p>
+    </div>
+    <div class="review-overview col-xs-4 col-xs-12">
+      <span class="overview-icon mega-octicon octicon-light-bulb"></span>
 
-        <div class="row overview-panel text-center col-sm-8 col-sm-offset-2">
-          <p>At present we have no product. We are reaching out to people to find out what issues they see and what they feel the science community should look like.
-          If you'd be interested in following our journey and shaping our efforts then please subscribe.</p>
-          <br>
-          <hr>
-          <div class="community-overview col-md-4 col-sm-12">
-            <span class="overview-icon mega-octicon octicon-organization"></span>
-            <p>Developing Community</p>
-          </div>
-          <div class="publication-overview col-md-4 col-sm-12">
-            <span class="overview-icon mega-octicon octicon-book"></span>
-            <p>Research Management</p>
-          </div>
-          <div class="review-overview col-md-4 col-sm-12">
-            <span class="overview-icon mega-octicon octicon-light-bulb"></span>
-            <p>Innovation And Ideas</p>
-          </div>
-          </div>
+      <h4>Innovation And Ideas</h4>
+      <p>Share thoughts, questions, and research to the community. Open research will cultivate new insights.</p>
+    </div>
+  </div>
 
-      </div>
+</div>
 
 </body>
 </html>
