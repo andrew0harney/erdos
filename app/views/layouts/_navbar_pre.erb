@@ -1,4 +1,12 @@
 <head>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67995810-1', 'auto');
+  </script>
 </head>
 
 <div class="row">
@@ -24,6 +32,10 @@
                     <%= current_user.email %> <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu nav-account-dropdown">
+                    <li><a tabindex="-1" href="#">Literature</a></li>
+                    <li><a tabindex="-1" href="#">Manage Research</a></li>
+                    <li><a tabindex="-1" href="#">Manage Publications</a></li>
+                    <li class="divider"></li>
                     <li><a tabindex="-1" href="#">My Publications</a></li>
                     <li><a tabindex="-1" href="#">My Reviews</a></li>
                     <li><a tabindex="-1" href="#">Profile</a></li>
