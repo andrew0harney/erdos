@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  get 'pages/about'
-
-  get 'pages/index'
 
   devise_for :admins
   devise_for :users
+  
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  get 'pages/about'
+
+  get 'pages/index'
 
   devise_scope :user do
     authenticated :user do
