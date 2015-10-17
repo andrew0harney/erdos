@@ -8,7 +8,7 @@
 <body>
 
 <div class="row" id="hero">
-  <video loop="loop" preload="auto" autobuffer autoplay id="pretzel-video" class="video-playing">
+  <video loop="loop" preload="auto" autoplay id="pretzel-video" class="video-playing">
     <source src="<%= asset_url 'lamp.mp4' %>" type="video/mp4">
   </video>
 </div>
@@ -52,4 +52,10 @@
 </div>
 
 </body>
+
+<script>
+    if (navigator.userAgent.indexOf('Android') >=0) {
+        document.getElementById('pretzel-video').controls = true;
+    }
+</script>
 </html>
