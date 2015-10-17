@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   devise_for :users
   
   get 'pages/about'
-
   get 'pages/index'
 
   devise_scope :user do
