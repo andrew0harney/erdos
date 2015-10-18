@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap-hover-dropdown/bootstrap-hover-dropdown.js
 //= require typeahead.js/dist/typeahead.bundle.js
+//= require d3
 //= require_tree .

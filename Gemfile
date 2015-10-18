@@ -47,3 +47,4 @@ group :development, :test do
   gem 'spring'
 end
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem "d3-rails"
