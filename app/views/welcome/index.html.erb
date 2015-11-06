@@ -18,58 +18,39 @@
     <h2>Welcome</h2>
     <h4>To Open Science</h4>
     <a href="/users/sign_up" class="btn hide-xs btn-contrast btn-large btn-semi-transparent js-show-how-it-works">
-      Subscribe
+        Start Being Open
     </a>
   </div>
 </div>
 
-<div class="row">
-  <div class="row overview-panel text-center col-xs-8 col-xs-offset-2">
-    <div class="community-overview col-xs-12">
-      <span class="overview-icon mega-octicon octicon-organization"></span>
+<div class="row overview-panel text-center col-md-12 col-md-offset-0 col-xs-8 col-xs-offset-2">
+<div class="community-overview col-md-6 col-xs-12">
+  <span class="overview-icon mega-octicon octicon-organization"></span>
 
-      <h4>Developing Community</h4>
-
-      <p>Keep a diary of papers you read. Add reviews, ratings and share with your peers.</p>
-    </div>
-    <div class="publication-overview col-xs-12">
-      <span class="overview-icon mega-octicon octicon-book"></span>
-
-      <h4>Research Management</h4>
-
-      <p>Manage the evolution of your ideas, scripts, and data with a simple visualisation.</p>
-    </div>
-    <div class="review-overview col-xs-12">
-      <span class="overview-icon mega-octicon octicon-light-bulb"></span>
-
-      <h4>Innovation And Ideas</h4>
-
-      <p>Share thoughts, questions, and research to the community. Open research will cultivate new insights.</p>
-    </div>
-  </div>
-
+  <h4>Developing Community</h4>
+  <p>Contribute thoughts, questions and reviews to published papers. Form research interest groups and collaborate with others.</p>
+</div>
+<div class="publication-overview col-md-6 col-xs-12">
+  <span class="overview-icon mega-octicon octicon-book"></span>
+  <h4>Research Management</h4>
+  <p>Manage the evolution of your ideas, methods, and data. Keep a diary of papers you read. </p>
+</div>
 </div>
 
 
 <div class="row">
   <div class="col-md-8 col-sx-12">
     <hr>
-    <h1>Open Science</h1>
-
+    <h1 style="color: #337ab7">Open Science</h1>
     <p>
-      Current scientific communication methods create unnecessary barriers in the way of progress, innovation, and
-      transparency in research. They also limit the reach and scope of ideas, results,
-      and collaboration between scientists and also to the public.
+      Closed scientific communication creates unnecessary barriers in the way of progress, innovation, and
+      transparency in research.
       <br>
       <br>
-      ERDOS is aimed at those who believe that a better scientific communication model is possible. For researchers, we
-      recognise the need to
-      to maximise impact and manage productivity in facilitating change to the status quo. For those whose interest is
-      more casual we also aim to open up research
-      and make content more accessible. We provide:
+      ERDOS is aimed at those who believe that a better scientific communication model is possible. We provide:
     <ul class="about-points-list">
-      <li type="square">A community to disseminate thoughts, ideas, and questions</li>
-      <li type="square">A visual timeline that helps researchers manage the evolution of ideas, scripts, and results
+      <li type="square">A community to disseminate thoughts, ideas, and questions about published work</li>
+      <li type="square">A management tool for the evolution of ideas, scripts, and results
       </li>
       <li type="square">A platform for post-publication review and citation analysis</li>
       <li type="square">An opportunity to maximise impact using qualitative metrics and analysis of open communication
@@ -78,24 +59,16 @@
     </ul>
     </p>
   </div>
-
-  <div class="col-md-4 col-sx-12 text-center" style="padding-top: 10%;">
-    <a href="/users/sign_up" class="btn hide-sm btn-contrast btn-large btn-semi-transparent about-begin">
-      Subscribe
-    </a>
-  </div>
 </div>
 
 <div class="row">
     <hr>
     <div class="col-md-8 col-sx-12 pull-right" style="">
-      <h1>What's an Erdos?</h1>
-
+      <h1 style="color: #E36937">What's an Erdos?</h1>
       <p>
-        <a href="https://en.wikipedia.org/wiki/Paul_Erd%C5%91s">Paul Erdős</a> was one of the most prolific scientists
+        Paul Erdős was one of the most prolific scientists
         and proponents of community
-        science in the last century. He coauthored with over 500 collaborators (giving rise to
-        the <a href="https://en.wikipedia.org/wiki/Erd%C5%91s_number">erdos number</a>) throughout his career
+        science in the last century. He co-authored with over 500 collaborators throughout his career
         on some of the most important advances in mathematics in recent times. Like all great thinkers Erdős was
         something of an eccentric and we would like continue on in his tradition
         of thinking outside the box, putting science first, and leveraging the power of community in forwarding science.
@@ -107,7 +80,7 @@
   <hr>
   <img width="50" height="37" style="margin-bottom: 1rem;" src="<%= asset_path 'ef_logo.png' %>">
 
-  <p>ERDOS Research is part of <a href="https://www.joinef.com">Entrepreneur First</a>, Europe's foremost pre-seed startup
+  <p>ERDOS Research is part of Entrepreneur First, Europe's foremost pre-seed startup
     incubator.</p>
 </div>
 
@@ -117,5 +90,14 @@
     if (navigator.userAgent.indexOf('Android') >= 0) {
         document.getElementById('pretzel-video').controls = true;
     }
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 100) {
+            $('.navbar').fadeOut();
+        }
+        else {
+            $('.navbar').fadeIn();
+        }
+    },false);
 </script>
 </html>
